@@ -1,0 +1,1414 @@
+{
+	"info": {
+		"_postman_id": "8a93f275-0e3a-4f9c-94b3-805a83636ebf",
+		"name": "Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Kyiv",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0592260b-0f4c-49ee-8b6b-d8e0bb4239df",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?q=Kyiv&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kyiiiv",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ed280312-6cf7-4f59-ac9b-87d7446cf6b5",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?q=Kyiiiv&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiiiv"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "space",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0592260b-0f4c-49ee-8b6b-d8e0bb4239df",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?q=&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": ""
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "numbers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0592260b-0f4c-49ee-8b6b-d8e0bb4239df",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?q=12345&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "12345"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kyiv, UA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c0bee52-1512-4326-b5dc-977f3e282b41",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?q=Kyiv, UA&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv, UA"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kyiv,DO",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d9fc580c-3f51-4c60-8472-d7df64070501",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?q=Kyiv,DO&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv,DO"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kyiv,U1A",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b1c5095c-9ba5-4a64-b9a9-41bad3b37d1b",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?q=Kyiv,U1A&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv,U1A"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id703448",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cbf2167b-6575-4134-afd4-c3dc1c4d2088",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?id=703448&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "703448"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id=70344448",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1c5c63c-ea9a-4ad1-9fcf-63ba2d9bc4ea",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?id=70344448&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "70344448"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id=",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1c5c63c-ea9a-4ad1-9fcf-63ba2d9bc4ea",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?id=&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": ""
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id= a703448",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1c5c63c-ea9a-4ad1-9fcf-63ba2d9bc4ea",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?id=a703448&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "a703448"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id= 703 448",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1c5c63c-ea9a-4ad1-9fcf-63ba2d9bc4ea",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?id=703 448&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "703 448"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat=50.433334&lon=30.516666",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "57728762-4720-4498-a14b-de979b80e31e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?lat=50.433334&lon=30.516666&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "50.433334"
+						},
+						{
+							"key": "lon",
+							"value": "30.516666"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat=50.45&lon=30.52 from Kyiv",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f97e308d-ca6e-48e8-937d-d6b82bad3b8d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?lat=50.45&lon=30.52&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "50.45"
+						},
+						{
+							"key": "lon",
+							"value": "30.52"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat=50.ggg433334&lon=30.ggg516666",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2daef588-be5e-478b-99bb-6b1f09bc25a0",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?lat=50.ggg433334&lon=30.ggg516666&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "50.ggg433334"
+						},
+						{
+							"key": "lon",
+							"value": "30.ggg516666"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat=&lon=30.52",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "57728762-4720-4498-a14b-de979b80e31e",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?lat=&lon=30.52&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": ""
+						},
+						{
+							"key": "lon",
+							"value": "30.52"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat=50.43&lon=",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "57728762-4720-4498-a14b-de979b80e31e",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?lat=50.43&lon=&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "50.43"
+						},
+						{
+							"key": "lon",
+							"value": ""
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zip=03179,ua",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2daef588-be5e-478b-99bb-6b1f09bc25a0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?zip=03179,ua&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": "03179,ua"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zip=0317,ua",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2daef588-be5e-478b-99bb-6b1f09bc25a0",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?zip=0317,ua&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": "0317,ua"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zip=031799,ua",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2daef588-be5e-478b-99bb-6b1f09bc25a0",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?zip=031799,ua&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": "031799,ua"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zip=,ua",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2daef588-be5e-478b-99bb-6b1f09bc25a0",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?zip=,ua&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": ",ua"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zip=03179",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2daef588-be5e-478b-99bb-6b1f09bc25a0",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/weather?zip=03179&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": "03179"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bbox=13,33,16,87,10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "99d2d3ec-ce44-4292-9d95-6129f903d771",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/box/city?bbox=13,33,16,87,10&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"box",
+						"city"
+					],
+					"query": [
+						{
+							"key": "bbox",
+							"value": "13,33,16,87,10"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bbox=a@13,33,16,87,10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9c2e1bf1-4911-49d3-8ab1-b061c86b9bd6",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/box/city?bbox=a@13,33,16,87,10&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"box",
+						"city"
+					],
+					"query": [
+						{
+							"key": "bbox",
+							"value": "a@13,33,16,87,10"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bbox=,,,,",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9c2e1bf1-4911-49d3-8ab1-b061c86b9bd6",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/box/city?bbox=,,,,&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"box",
+						"city"
+					],
+					"query": [
+						{
+							"key": "bbox",
+							"value": ",,,,"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat=46.5&lon=28.5&cnt=10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "99d2d3ec-ce44-4292-9d95-6129f903d771",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/find?lat=46.5&lon=28.5&cnt=10&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "46.5"
+						},
+						{
+							"key": "lon",
+							"value": "28.5"
+						},
+						{
+							"key": "cnt",
+							"value": "10"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat=a46.5&lon=28.5&cnt=10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "99d2d3ec-ce44-4292-9d95-6129f903d771",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/find?lat=a46.5&lon=28.5&cnt=10&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "a46.5"
+						},
+						{
+							"key": "lon",
+							"value": "28.5"
+						},
+						{
+							"key": "cnt",
+							"value": "10"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat=46.5&lon=28.5&cnt=51",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "99d2d3ec-ce44-4292-9d95-6129f903d771",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/find?lat=46.5&lon=28.5&cnt=51&APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "46.5"
+						},
+						{
+							"key": "lon",
+							"value": "28.5"
+						},
+						{
+							"key": "cnt",
+							"value": "51"
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/group?id=703448,456169,713514,711349&units=metric",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e9677493-f3a4-4de8-b308-d39af7cd27d0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/group?id=703448,456169,713514,711349&units=metric &APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "703448,456169,713514,711349"
+						},
+						{
+							"key": "units",
+							"value": "metric "
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/group?id=703448,a456169,713514,711349&units=metric",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e9677493-f3a4-4de8-b308-d39af7cd27d0",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url_weat}}/group?id=703448,a456169,713514,711349&units=metric &APPID=d9ac66300efd70377c04dc65797e99ef",
+					"host": [
+						"{{base_url_weat}}"
+					],
+					"path": [
+						"group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "703448,a456169,713514,711349"
+						},
+						{
+							"key": "units",
+							"value": "metric "
+						},
+						{
+							"key": "APPID",
+							"value": "d9ac66300efd70377c04dc65797e99ef"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
